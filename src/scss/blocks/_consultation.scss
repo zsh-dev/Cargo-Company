@@ -1,0 +1,50 @@
+.consultation{
+    padding: 52px 0 111px;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 38px 20px 60px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    &__box {
+        flex-basis: 50%;
+    }
+    &__img {
+        flex-basis: 50%;
+    }
+    &__title{
+        margin-bottom: 25px;
+    }
+    &__subtitle {
+        @include gilroy-600;
+        font-size: 24px;
+        line-height: 29px;
+        color: #444444;
+        margin-bottom: 35px;
+    }
+    &__input {
+        width: 346px;
+        height: 40px;
+        padding-bottom: 13px;
+        border: 0;
+        outline: 0;
+        border-bottom: 2px solid #A8A8A8;
+        margin-bottom: 35px;
+        
+        &::placeholder {
+            color: #929292;
+        }
+    }
+    &__btn {
+        height: 65px;
+        padding: 0 29px;
+        &:hover {
+            background-color: transparent;
+            border: 2px solid #FF0013;
+            color: #575757;
+        }
+    }
+}

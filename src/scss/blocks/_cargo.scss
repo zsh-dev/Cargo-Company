@@ -1,0 +1,56 @@
+.cargo {
+    padding: 28px 0 90px;
+    &__title {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 182px;
+        gap: 24px 20px;
+    }
+    &__card{
+        position: relative;
+        
+        background: center center/cover no-repeat ;
+        display: inline-flex;
+        align-items: flex-end;
+        padding: 0 40px 19px;
+        border-radius: 10px;
+        transition:filter .5s;
+        &:hover{
+            filter: drop-shadow(0px 0px 30px rgba(255, 0, 19, 0.3));
+        }
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        &-title {
+            @include gilroy-700;
+            font-size: 21px;
+            line-height: 25px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            
+        }
+        &-link {
+            color: inherit;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+    &__wrap-btn {
+        display: none;
+        margin-top: 45px;
+        text-align: center;
+    }
+}

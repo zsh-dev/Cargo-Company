@@ -1,0 +1,125 @@
+.footer {
+    padding: 59px 0 76px;
+    background-color: #0F1C22;
+    font-size: 17px;
+    line-height: 20px;
+    color: #C7C7C7;
+    &__inner {
+        display: flex;
+        padding: 0 80px;
+        justify-content: space-between;
+        flex-wrap: wrap
+    }
+    &__title {
+        @include gilroy-600;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+    &__subtitle{
+        @include gilroy-600;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    &__item {
+        margin-bottom: 13px;
+    }
+    &__link {
+        color: #C7C7C7;
+        transition: .5s;
+        &:hover {
+            color: #FF0013;
+        }
+    }
+    &__phones{
+        margin-top: 9px;
+        &-link{
+            position: relative;
+            display: block;
+            color: #C7C7C7;
+            padding-left: 25px;
+            margin-bottom: 13px;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: url(../icons/white-phone.svg);
+                width: 16px;
+                height: 16px;
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    &__socials {
+        margin-top: 6px;
+        &-link {
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            margin-right: 12px;
+            background-color: #C6C6C6;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            transition: .7s ease;
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            path {
+                transition: .7s ease;
+            }
+            &:hover{
+                background-color: #FF0013;
+                path{
+                    fill: #fff;
+                }
+            }
+        }
+    }
+    &__link-address{
+        max-width: 236px;
+        position: relative;
+        margin: 12px 0 28px;
+        padding-left: 25px;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url(../icons/address.svg);
+            width: 14px;
+            height: 18px;
+        }
+    }
+    &__time {
+        margin-top: 10px;
+        &-text {
+            position: relative;
+            padding-left: 21px;
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                top: 2px;
+                left: 0;
+                background-image: url(../icons/time.svg);
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+    &__name {
+        margin-top: 15px;
+    }
+    &__copyright{
+        margin-top: 8px;
+    }
+}

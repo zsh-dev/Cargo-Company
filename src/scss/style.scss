@@ -1,0 +1,22 @@
+@import 'base/mixins';
+@import 'base/variables';
+
+@import 'libs/minireset.min';
+@import 'fonts';
+@import 'settings';
+@import 'components';
+
+
+@import 'blocks/header';
+@import 'blocks/delivery';
+@import 'blocks/nav-panel';
+@import 'blocks/reasons';
+@import 'blocks/payment';
+@import 'blocks/connect';
+@import 'blocks/cargo';
+@import 'blocks/choice';
+@import 'blocks/feedback';
+@import 'blocks/consultation';
+@import 'blocks/footer';
+@import 'blocks/modal';
+@import 'media';

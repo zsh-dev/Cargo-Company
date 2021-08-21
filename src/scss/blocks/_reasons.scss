@@ -1,0 +1,63 @@
+.reasons{
+    padding: 72px 0 90px;
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+    &__title {
+        margin-bottom: 52px;
+        text-align: center;
+    }
+    &__descr {
+        flex-basis: 66.666%;
+        margin-right: 50px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &-img {
+            flex-shrink: 0;
+            margin-right: 20px;
+        }
+        &-text {
+            @include geometria-400;
+            font-size: 18px;
+            line-height: 23px;
+            color: #575757;
+        }
+    }
+    &__btn {
+        height: 55px;
+        padding: 0 33px;
+        margin-top: 25px;
+        &:hover {
+            color: #575757;
+        }
+    }
+    &__card {
+        position: relative;
+        flex-basis: 332px;
+        &-img {
+            border-radius: 10px;
+        }
+        &-text {
+            @include gilroy-700;
+            position: absolute;
+            bottom: 34px;
+            left: 38px;
+        }
+        &-position {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 13px;
+        }
+        &-name {
+            font-size: 23px;
+            line-height: 28px;
+        }
+    }
+}
