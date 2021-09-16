@@ -1,1 +1,1 @@
-https://zsh-dev.github.io/Translinii/dist ссылка на сайт
+https://zsh-dev.github.io/Cargo-Company/dist ссылка на сайт
