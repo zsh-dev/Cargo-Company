@@ -2,6 +2,14 @@
     .nav-panel {
         display: none;
     }
+    .header {
+        &__contacts {
+            margin-right: 11px;
+        }
+        &__socials {
+            margin-right: 10px;
+        }
+    }
 
 }
 
@@ -202,7 +210,7 @@
         }
 
         &__item-text {
-            font-size: 13px;
+            font-size: 16px;
         }
 
         &__item-img {
@@ -212,10 +220,6 @@
                 width: 69px;
                 height: 69px;
             }
-        }
-
-        &__card {
-            flex-basis: 212px;
         }
 
         &__btn {
