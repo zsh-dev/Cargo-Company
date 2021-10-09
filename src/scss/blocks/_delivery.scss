@@ -23,6 +23,8 @@
         color: #fff;
         margin-bottom: 50px;
         span {
+            display: block;
+            margin-top: 8px;
             @include gilroy-400;
             font-size: 34px;
             line-height: 40px;
