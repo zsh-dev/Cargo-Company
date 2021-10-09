@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Компания «ТрансЛинии» - перевозка грузов в Перми и по всей России</title>
+    <title>Грузоперевозочная компания</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -136,7 +136,7 @@
                     <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
                     <div class="header__contacts">
                     <div class="header__socials">
-                        <a href="#" class="header__socials-mail">aaaa@mail.ru</a>
+                        <a href="#" class="header__socials-mail">aa@mail.ru</a>
                         <a href="#" class="header__socials-link">
                             <svg width="20" height="11" viewBox="0 0 20 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -344,18 +344,18 @@
                         <button class="btn delivery__btn btn_black">Заказать доставку</button>
                         <button class="btn delivery__btn">Рассчитать отдельный транспорт </button>
                     </div>
-                    <div class="delivery__box">
-                        <div class="title delivery__box-title title_size_17">Рассчитаем стоимость доставки за 5 минут
+                    <div class="delivery-box delivery__box">
+                        <div class="title delivery-box__title title_size_17">Рассчитаем стоимость доставки за 5 минут
                             прямо сейчас</div>
-                        <form action="#" class="delivery__box-form">
-                            <div class="delivery__box-header">
-                                <input name="name" type="text" class="delivery__box-input" placeholder="Ваше Имя">
-                                <input name="num" type="text" class="delivery__box-input"
+                        <form action="#" class="delivery-box__form">
+                            <div class="delivery-box__header">
+                                <input name="name" type="text" class="delivery-box__input" placeholder="Ваше Имя">
+                                <input name="num" type="text" class="delivery-box__input"
                                     placeholder="Ваш номер">
                             </div>
-                            <div class="delivery__box-footer">
-                                <button type="submit" class="btn delivery__box-btn">Оставить заявку</button>
-                                <p class="delivery__box-text">Оставьте ваш телефон. Мы сделаем расчет, перезвоним и
+                            <div class="delivery-box__footer">
+                                <button type="submit" class="btn delivery-box__btn">Оставить заявку</button>
+                                <p class="delivery-box__text">Оставьте ваш телефон. Мы сделаем расчет, перезвоним и
                                     ответим
                                     на все вопросы.</p>
                             </div>
@@ -363,49 +363,56 @@
                     </div>
                 </div>
                 <div class="delivery__calc">
-                    <div class="delivery__info">
-                        <h2 class="delivery__info-title">Узнайте стоимость перевозки грузов </h2>
-                        <div class="divider delivery__info-divider"></div>
-                        <form action="#" class="delivery__info-form">
-                            <div class="delivery__info-wrap">
-                                <label class="delivery__info-label">Откуда?</label>
-                                <input name="name" type="text" class="delivery__info-input"
+                    <div class="delivery-info delivery__info">
+                        <h2 class="delivery-info__title">Узнайте стоимость перевозки грузов </h2>
+                        <div class="divider delivery-info__divider"></div>
+                        <form action="#" class="delivery-info__form">
+                            <div class="delivery-info__wrap">
+                                <label class="delivery-info__label">Откуда?</label>
+                                <input name="name" type="text" class="delivery-info__input"
                                     placeholder="Город отправления">
                             </div>
-                            <div class="delivery__info-wrap">
-                                <label class="delivery__info-label">Куда</label>
-                                <input name="name" type="text" class="delivery__info-input"
+                            <div class="delivery-info__wrap">
+                                <label class="delivery-info__label">Куда</label>
+                                <input name="name" type="text" class="delivery-info__input"
                                     placeholder="Город получения">
                             </div>
-                            <div class="delivery__info-wrap">
-                                <label class="delivery__info-label">Вес груза</label>
-                                <input name="name" type="text" class="delivery__info-input" placeholder="Вес груза, кг">
+                            <div class="delivery-info__wrap">
+                                <label class="delivery-info__label">Вес груза</label>
+                                <input name="name" type="text" class="delivery-info__input" placeholder="Вес груза, кг">
                             </div>
-                            <div class="delivery__info-wrap">
-                                <label class="delivery__info-label">Объем груза</label>
-                                <input name="name" type="text" class="delivery__info-input"
+                            <div class="delivery-info__wrap">
+                                <label class="delivery-info__label">Объем груза</label>
+                                <input name="name" type="text" class="delivery-info__input"
                                     placeholder="Объем груза, м³">
                             </div>
-                            <div class="delivery__info-checkboxes">
-                                <input name="name" type="checkbox" id="checkbox_nds" class="delivery__info-checkbox">
-                                <label for="checkbox_nds" class="delivery__info-label">Посчитать с НДС</label>
-                                <input name="name" type="checkbox" id="checkbox_temp" class="delivery__info-checkbox">
-                                <label for="checkbox_temp" class="delivery__info-label">Температурный режим</label>
+                            <div class="delivery-info__checkboxes">
+                                
+                                <label class="check delivery-info__label">
+                                    <input name="name" type="checkbox" class="check__input">
+                                    <span class="check__box"></span>
+                                    Посчитать с НДС
+                                </label>
+                                <label class="check delivery-info__label">
+                                    <input name="name" type="checkbox" class="check__input">
+                                    <span class="check__box"></span>
+                                    Температурный режим
+                                </label>
                             </div>
-                            <div class="delivery__info-texts">
-                                <p class="delivery__info-text">Расстояние <span>0 км</span></p>
-                                <p class="delivery__info-text">Срок доставки <span>0 дней</span></p>
-                                <p class="delivery__info-text delivery__info-cost">Примерная стоимость доставки <span>0
+                            <div class="delivery-info__texts">
+                                <p class="delivery-info__text">Расстояние <span>0 км</span></p>
+                                <p class="delivery-info__text">Срок доставки <span>0 дней</span></p>
+                                <p class="delivery-info__text delivery-info__cost">Примерная стоимость доставки <span>0
                                         руб</span></p>
                             </div>
-                            <div class="delivery__info-number">
-                                <label class="delivery__info-label">Введите ваш номер телефона </label>
-                                <input name="num" type="text" class="delivery__info-input"
+                            <div class="delivery-info__number">
+                                <label class="delivery-info__label">Введите ваш номер телефона </label>
+                                <input name="num" type="text" class="delivery-info__input"
                                     placeholder="Введите ваш телефон">
                             </div>
-                            <button class="btn delivery__info-btn" type="submit">Рассчитать точную стоимость </button>
+                            <button class="btn delivery-info__btn" type="submit">Рассчитать точную стоимость </button>
                         </form>
-                        <div class="delivery__info-decoration"></div>
+                        <div class="delivery-info__decoration"></div>
                     </div>
                 </div>
             </div>
@@ -493,46 +500,38 @@
     <section class="connect">
         <div class="container">
             <div class="connect__inner">
-                <div class="connect__box">
-                    <div class="connect__box-wrapper">
-                        <div class="connect__box-body">
-                            <h2 class="title connect__box-title title_size_40">Самое сложное мы сделаем за вас</h2>
-                            <p class="connect__box-text">Просто заполните форму обратной связи и мы с Вами свяжемся </p>
-                            <form action="#" class="connect__box-form">
-                                <input type="text" name="name" class="connect__box-input" placeholder="Ваше Имя">
-                                <input type="text" name="num" class="connect__box-input" placeholder="Телефон">
-                                <button class="btn connect__box-btn btn_square" type="submit">Оставить заявку</button>
+                <div class="connect-box connect__box">
+                    <div class="connect-box__wrapper">
+                        <div class="connect-box__body">
+                            <h2 class="title connect-box__title title_size_40">Самое сложное мы сделаем за вас</h2>
+                            <p class="connect-box__text">Просто заполните форму обратной связи и мы с Вами свяжемся </p>
+                            <form action="#" class="connect-box__form">
+                                <input type="text" name="name" class="connect-box__input" placeholder="Ваше Имя">
+                                <input type="text" name="num" class="connect-box__input" placeholder="Телефон">
+                                <button class="btn connect-box__btn btn_square" type="submit">Оставить заявку</button>
                             </form>
                         </div>
                     </div>
                 </div>
                 <ul class="connect__list">
                     <li class="connect__item">
-                        <div class="connect__item-img">
-                            <img src="icons/connect-1.svg" alt="">
-                        </div>
+                        <div class="connect__item-img connect__item-img_first"></div>
                         <p class="connect__item-text">Вы оставляете заявку</p>
 
                     </li>
                     <li class="connect__item">
-                        <div class="connect__item-img">
-                            <img src="icons/connect-2.svg" alt="">
-                        </div>
+                        <div class="connect__item-img connect__item-img_second"></div>
                         <p class="connect__item-text">Мы прорабатываем
                             оптимальное решение</p>
 
                     </li>
                     <li class="connect__item">
-                        <div class="connect__item-img">
-                            <img src="icons/connect-3.svg" alt="">
-                        </div>
+                        <div class="connect__item-img connect__item-img_third"></div>
                         <p class="connect__item-text">Заключаем договор и подаём авто на погрузку </p>
 
                     </li>
                     <li class="connect__item">
-                        <div class="connect__item-img">
-                            <img src="icons/connect-4.svg" alt="">
-                        </div>
+                        <div class="connect__item-img connect__item-img_fourth"></div>
                         <p class="connect__item-text">Груз доставлен!</p>
 
                     </li>
@@ -544,45 +543,45 @@
         <div class="container">
             <h2 class="title cargo__title">Какие грузы мы доставляем?</h2>
             <ul class="cargo__list">
-                <li class="cargo__card" style="background-image: url(img/cargo-1.jpg);">
+                <li class="cargo-card" style="background-image: url(img/cargo-1.jpg);">
                     
-                    <h3 class="cargo__card-title"><a href="#" class="cargo__card-link">Международная перевозка</a></h3>
+                    <h3 class="cargo-card__title"><a href="#" class="cargo-card__link">Международная перевозка</a></h3>
                 </li>
-                <li class="cargo__card" style="background-image: url(img/cargo-1.jpg);">
+                <li class="cargo-card" style="background-image: url(img/cargo-1.jpg);">
                     
-                    <h3 class="cargo__card-title"><a href="#" class="cargo__card-link">Международная перевозка</a></h3>
+                    <h3 class="cargo-card__title"><a href="#" class="cargo-card__link">Международная перевозка</a></h3>
                 </li>
-                <li class="cargo__card" style="background-image: url(img/cargo-1.jpg);">
+                <li class="cargo-card" style="background-image: url(img/cargo-1.jpg);">
                     
-                    <h3 class="cargo__card-title"><a href="#" class="cargo__card-link">Международная перевозка</a></h3>
+                    <h3 class="cargo-card__title"><a href="#" class="cargo-card__link">Международная перевозка</a></h3>
                 </li>
-                <li class="cargo__card" style="background-image: url(img/cargo-1.jpg);">
+                <li class="cargo-card" style="background-image: url(img/cargo-1.jpg);">
                     
-                    <h3 class="cargo__card-title"><a href="#" class="cargo__card-link">Международная перевозка</a></h3>
+                    <h3 class="cargo-card__title"><a href="#" class="cargo-card__link">Международная перевозка</a></h3>
                 </li>
-                <li class="cargo__card" style="background-image: url(img/cargo-1.jpg);">
+                <li class="cargo-card" style="background-image: url(img/cargo-1.jpg);">
                     
-                    <h3 class="cargo__card-title"><a href="#" class="cargo__card-link">Международная перевозка</a></h3>
+                    <h3 class="cargo-card__title"><a href="#" class="cargo-card__link">Международная перевозка</a></h3>
                 </li>
-                <li class="cargo__card" style="background-image: url(img/cargo-1.jpg);">
+                <li class="cargo-card" style="background-image: url(img/cargo-1.jpg);">
                     
-                    <h3 class="cargo__card-title"><a href="#" class="cargo__card-link">Международная перевозка</a></h3>
+                    <h3 class="cargo-card__title"><a href="#" class="cargo-card__link">Международная перевозка</a></h3>
                 </li>
-                <li class="cargo__card" style="background-image: url(img/cargo-1.jpg);">
+                <li class="cargo-card" style="background-image: url(img/cargo-1.jpg);">
                     
-                    <h3 class="cargo__card-title"><a href="#" class="cargo__card-link">Международная перевозка</a></h3>
+                    <h3 class="cargo-card__title"><a href="#" class="cargo-card__link">Международная перевозка</a></h3>
                 </li>
-                <li class="cargo__card" style="background-image: url(img/cargo-1.jpg);">
+                <li class="cargo-card" style="background-image: url(img/cargo-1.jpg);">
                     
-                    <h3 class="cargo__card-title"><a href="#" class="cargo__card-link">Международная перевозка</a></h3>
+                    <h3 class="cargo-card__title"><a href="#" class="cargo-card__link">Международная перевозка</a></h3>
                 </li>
-                <li class="cargo__card" style="background-image: url(img/cargo-1.jpg);">
+                <li class="cargo-card" style="background-image: url(img/cargo-1.jpg);">
                     
-                    <h3 class="cargo__card-title"><a href="#" class="cargo__card-link">Международная перевозка</a></h3>
+                    <h3 class="cargo-card__title"><a href="#" class="cargo-card__link">Международная перевозка</a></h3>
                 </li>
-                <li class="cargo__card" style="background-image: url(img/cargo-1.jpg);">
+                <li class="cargo-card" style="background-image: url(img/cargo-1.jpg);">
                     
-                    <h3 class="cargo__card-title"><a href="#" class="cargo__card-link">Международная перевозка</a></h3>
+                    <h3 class="cargo-card__title"><a href="#" class="cargo-card__link">Международная перевозка</a></h3>
                 </li>
             </ul>
             <div class="cargo__wrap-btn">
@@ -640,186 +639,186 @@
         <div class="container">
             <h2 class="title feedback__title">Отзывы</h2>
             <ul class="feedback__list">
-                <li class="feedback__item">
-                    <div class="feedback__item-header">
-                        <div class="feedback__img">
+                <li class="feedback-item">
+                    <div class="feedback-item__header">
+                        <div class="feedback-item__img">
                             <img src="icons/user.svg" alt="">
                         </div>
-                        <div class="feedback__user">
-                            <p class="feedback__user-name">Владимир Б.</p>
-                            <p class="feedback__user-level">Знаток города 2 уровня</p>
+                        <div class="feedback-item__user">
+                            <p class="feedback-item__user-name">Владимир Б.</p>
+                            <p class="feedback-item__user-level">Знаток города 2 уровня</p>
                         </div>
                     </div>
-                    <div class="feedback__rating">
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <p class="feedback__rating-date">27 июл 2020</p>
+                    <div class="feedback-item__rating">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="feedback-item__rating-date">27 июл 2020</p>
                     </div>
-                    <p class="feedback__comment">Доставили груз в целости и сохранности, справились в сроки без каких
+                    <p class="feedback-item__comment">Доставили груз в целости и сохранности, справились в сроки без каких
                         либо задержек.
                         Проделанной работай доволен и могу рекомендовать вам.
                     </p>
                 </li>
-                <li class="feedback__item">
-                    <div class="feedback__item-header">
-                        <div class="feedback__img">
+                <li class="feedback-item">
+                    <div class="feedback-item__header">
+                        <div class="feedback-item__img">
                             <img src="icons/user.svg" alt="">
                         </div>
-                        <div class="feedback__user">
-                            <p class="feedback__user-name">Владимир Б.</p>
-                            <p class="feedback__user-level">Знаток города 2 уровня</p>
+                        <div class="feedback-item__user">
+                            <p class="feedback-item__user-name">Владимир Б.</p>
+                            <p class="feedback-item__user-level">Знаток города 2 уровня</p>
                         </div>
                     </div>
-                    <div class="feedback__rating">
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <p class="feedback__rating-date">27 июл 2020</p>
+                    <div class="feedback-item__rating">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="feedback-item__rating-date">27 июл 2020</p>
                     </div>
-                    <p class="feedback__comment">Доставили груз в целости и сохранности, справились в сроки без каких
+                    <p class="feedback-item__comment">Доставили груз в целости и сохранности, справились в сроки без каких
                         либо задержек.
                         Проделанной работай доволен и могу рекомендовать вам.
                     </p>
                 </li>
-                <li class="feedback__item">
-                    <div class="feedback__item-header">
-                        <div class="feedback__img">
+                <li class="feedback-item">
+                    <div class="feedback-item__header">
+                        <div class="feedback-item__img">
                             <img src="icons/user.svg" alt="">
                         </div>
-                        <div class="feedback__user">
-                            <p class="feedback__user-name">Владимир Б.</p>
-                            <p class="feedback__user-level">Знаток города 2 уровня</p>
+                        <div class="feedback-item__user">
+                            <p class="feedback-item__user-name">Владимир Б.</p>
+                            <p class="feedback-item__user-level">Знаток города 2 уровня</p>
                         </div>
                     </div>
-                    <div class="feedback__rating">
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <p class="feedback__rating-date">27 июл 2020</p>
+                    <div class="feedback-item__rating">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="feedback-item__rating-date">27 июл 2020</p>
                     </div>
-                    <p class="feedback__comment">Доставили груз в целости и сохранности, справились в сроки без каких
+                    <p class="feedback-item__comment">Доставили груз в целости и сохранности, справились в сроки без каких
                         либо задержек.
                         Проделанной работай доволен и могу рекомендовать вам.
                     </p>
                 </li>
-                <li class="feedback__item">
-                    <div class="feedback__item-header">
-                        <div class="feedback__img">
+                <li class="feedback-item">
+                    <div class="feedback-item__header">
+                        <div class="feedback-item__img">
                             <img src="icons/user.svg" alt="">
                         </div>
-                        <div class="feedback__user">
-                            <p class="feedback__user-name">Владимир Б.</p>
-                            <p class="feedback__user-level">Знаток города 2 уровня</p>
+                        <div class="feedback-item__user">
+                            <p class="feedback-item__user-name">Владимир Б.</p>
+                            <p class="feedback-item__user-level">Знаток города 2 уровня</p>
                         </div>
                     </div>
-                    <div class="feedback__rating">
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <p class="feedback__rating-date">27 июл 2020</p>
+                    <div class="feedback-item__rating">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="feedback-item__rating-date">27 июл 2020</p>
                     </div>
-                    <p class="feedback__comment">Доставили груз в целости и сохранности, справились в сроки без каких
+                    <p class="feedback-item__comment">Доставили груз в целости и сохранности, справились в сроки без каких
                         либо задержек.
                         Проделанной работай доволен и могу рекомендовать вам.
                     </p>
                 </li>
-                <li class="feedback__item">
-                    <div class="feedback__item-header">
-                        <div class="feedback__img">
+                <li class="feedback-item">
+                    <div class="feedback-item__header">
+                        <div class="feedback-item__img">
                             <img src="icons/user.svg" alt="">
                         </div>
-                        <div class="feedback__user">
-                            <p class="feedback__user-name">Владимир Б.</p>
-                            <p class="feedback__user-level">Знаток города 2 уровня</p>
+                        <div class="feedback-item__user">
+                            <p class="feedback-item__user-name">Владимир Б.</p>
+                            <p class="feedback-item__user-level">Знаток города 2 уровня</p>
                         </div>
                     </div>
-                    <div class="feedback__rating">
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <p class="feedback__rating-date">27 июл 2020</p>
+                    <div class="feedback-item__rating">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="feedback-item__rating-date">27 июл 2020</p>
                     </div>
-                    <p class="feedback__comment">Доставили груз в целости и сохранности, справились в сроки без каких
+                    <p class="feedback-item__comment">Доставили груз в целости и сохранности, справились в сроки без каких
                         либо задержек.
                         Проделанной работай доволен и могу рекомендовать вам.
                     </p>
                 </li>
-                <li class="feedback__item">
-                    <div class="feedback__item-header">
-                        <div class="feedback__img">
+                <li class="feedback-item">
+                    <div class="feedback-item__header">
+                        <div class="feedback-item__img">
                             <img src="icons/user.svg" alt="">
                         </div>
-                        <div class="feedback__user">
-                            <p class="feedback__user-name">Владимир Б.</p>
-                            <p class="feedback__user-level">Знаток города 2 уровня</p>
+                        <div class="feedback-item__user">
+                            <p class="feedback-item__user-name">Владимир Б.</p>
+                            <p class="feedback-item__user-level">Знаток города 2 уровня</p>
                         </div>
                     </div>
-                    <div class="feedback__rating">
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <p class="feedback__rating-date">27 июл 2020</p>
+                    <div class="feedback-item__rating">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="feedback-item__rating-date">27 июл 2020</p>
                     </div>
-                    <p class="feedback__comment">Доставили груз в целости и сохранности, справились в сроки без каких
+                    <p class="feedback-item__comment">Доставили груз в целости и сохранности, справились в сроки без каких
                         либо задержек.
                         Проделанной работай доволен и могу рекомендовать вам.
                     </p>
                 </li>
-                <li class="feedback__item">
-                    <div class="feedback__item-header">
-                        <div class="feedback__img">
+                <li class="feedback-item">
+                    <div class="feedback-item__header">
+                        <div class="feedback-item__img">
                             <img src="icons/user.svg" alt="">
                         </div>
-                        <div class="feedback__user">
-                            <p class="feedback__user-name">Владимир Б.</p>
-                            <p class="feedback__user-level">Знаток города 2 уровня</p>
+                        <div class="feedback-item__user">
+                            <p class="feedback-item__user-name">Владимир Б.</p>
+                            <p class="feedback-item__user-level">Знаток города 2 уровня</p>
                         </div>
                     </div>
-                    <div class="feedback__rating">
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <p class="feedback__rating-date">27 июл 2020</p>
+                    <div class="feedback-item__rating">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="feedback-item__rating-date">27 июл 2020</p>
                     </div>
-                    <p class="feedback__comment">Доставили груз в целости и сохранности, справились в сроки без каких
+                    <p class="feedback-item__comment">Доставили груз в целости и сохранности, справились в сроки без каких
                         либо задержек.
                         Проделанной работай доволен и могу рекомендовать вам.
                     </p>
                 </li>
-                <li class="feedback__item">
-                    <div class="feedback__item-header">
-                        <div class="feedback__img">
+                <li class="feedback-item">
+                    <div class="feedback-item__header">
+                        <div class="feedback-item__img">
                             <img src="icons/user.svg" alt="">
                         </div>
-                        <div class="feedback__user">
-                            <p class="feedback__user-name">Владимир Б.</p>
-                            <p class="feedback__user-level">Знаток города 2 уровня</p>
+                        <div class="feedback-item__user">
+                            <p class="feedback-item__user-name">Владимир Б.</p>
+                            <p class="feedback-item__user-level">Знаток города 2 уровня</p>
                         </div>
                     </div>
-                    <div class="feedback__rating">
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <span class="feedback__rating-item"></span>
-                        <p class="feedback__rating-date">27 июл 2020</p>
+                    <div class="feedback-item__rating">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p class="feedback-item__rating-date">27 июл 2020</p>
                     </div>
-                    <p class="feedback__comment">Доставили груз в целости и сохранности, справились в сроки без каких
+                    <p class="feedback-item__comment">Доставили груз в целости и сохранности, справились в сроки без каких
                         либо задержек.
                         Проделанной работай доволен и могу рекомендовать вам.
                     </p>

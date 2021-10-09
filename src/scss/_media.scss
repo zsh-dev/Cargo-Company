@@ -2,10 +2,12 @@
     .nav-panel {
         display: none;
     }
+
     .header {
         &__contacts {
             margin-right: 11px;
         }
+
         &__socials {
             margin-right: 10px;
         }
@@ -49,17 +51,21 @@
         }
     }
 
-    .delivery__info-label {
-        font-size: 11px;
+    .delivery-info {
+        &__label {
+            font-size: 11px;
+        }
+
+        &__text {
+            font-size: 12px;
+        }
+
+        &__btn {
+            height: 55px;
+        }
     }
 
-    .delivery__info-text {
-        font-size: 12px;
-    }
 
-    .delivery__info-btn {
-        height: 55px;
-    }
 
     .connect {
         padding: 90px 0 70px;
@@ -130,75 +136,78 @@
             margin-right: 0;
         }
 
-        &__box {
-            width: 100%;
-            padding-left: 54px;
-            padding-right: 45px;
-            margin-bottom: 30px;
 
-            &-input {
-                width: 48%;
-            }
+
+    }
+
+    .delivery-box {
+        width: 100%;
+        padding-left: 54px;
+        padding-right: 45px;
+        margin-bottom: 30px;
+
+        &__input {
+            width: 48%;
+        }
+    }
+
+    .delivery-info {
+        max-width: 100%;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+
+        &__title {
+            font-size: 25px;
+            line-height: 31px;
+            max-width: 100%;
         }
 
-        &__info {
-            max-width: 100%;
-            box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+        &__form {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-            &-title {
-                font-size: 25px;
-                line-height: 31px;
-                max-width: 100%;
-            }
+        &__wrap {
+            width: 47%;
+            margin-right: 17px;
+        }
 
-            &-form {
-                display: flex;
-                flex-wrap: wrap;
-            }
+        &__checkboxes {
+            margin-bottom: 10px;
+        }
 
-            &-wrap {
-                width: 47%;
-                margin-right: 17px;
-            }
+        &__checkbox {
+            margin-right: 10px;
+        }
 
-            &-checkboxes {
-                margin-bottom: 10px;
-            }
+        &__label {
+            margin-bottom: 0;
+            margin-right: 10px;
+        }
 
-            &-checkbox {
-                margin-right: 10px;
-            }
+        &__cost {
+            display: inline-block;
+            margin-top: 0;
+        }
 
-            &-label {
-                margin-bottom: 0;
-                margin-right: 10px;
-            }
+        &__texts {
+            width: 100%;
+            margin-bottom: 10px;
+        }
 
-            &-cost {
-                display: inline-block;
-                margin-top: 0;
-            }
+        &__number {
+            width: 256px;
+            margin-right: 17px;
+            margin-bottom: 0;
+        }
 
-            &-texts {
-                width: 100%;
-                margin-bottom: 10px;
-            }
+        &__btn {
+            width: 256px;
+            margin-top: 10px;
+            @include gilroy-700;
+        }
 
-            &-number {
-                width: 256px;
-                margin-right: 17px;
-                margin-bottom: 0;
-            }
-
-            &-btn {
-                width: 256px;
-                margin-top: 10px;
-                @include gilroy-700;
-            }
-
-            &-decoration {
-                top: 125px;
-            }
+        &__decoration {
+            top: 125px;
         }
     }
 
@@ -262,13 +271,15 @@
         padding: 84px 0 20px;
     }
 
-    .connect__box-body {
-        text-align: center;
-        padding: 33px 44px;
-    }
+    .connect-box {
+        &__body {
+            text-align: center;
+            padding: 33px 44px;
+        }
 
-    .connect__box-form {
-        width: 100%;
+        &__form {
+            width: 100%;
+        }
     }
 
     .cargo {
@@ -282,14 +293,16 @@
 
         }
 
-        &__card {
-            &:nth-child(n + 6) {
-                display: none;
-            }
-        }
+
 
         &__wrap-btn {
             display: block;
+        }
+    }
+
+    .cargo-card {
+        &:nth-child(n + 6) {
+            display: none;
         }
     }
 
@@ -378,21 +391,25 @@
         &__card {
             margin-right: 10px;
         }
+    }
 
-        &__box-input {
+    .delivery-box {
+        &__input {
             width: 47%;
         }
+    }
 
-        &__info-wrap {
+    .delivery-info {
+        &__wrap {
             margin-right: 10px;
         }
 
-        &__info-number {
+        &__number {
             width: 100%;
             margin-right: 0;
         }
 
-        &__info-btn {
+        &__btn {
             margin: 10px auto 0;
         }
     }
@@ -418,7 +435,7 @@
         }
     }
 
-    .connect__box-wrapper {
+    .connect-box__wrapper {
         width: 100%;
     }
 }
@@ -484,11 +501,12 @@
             }
         }
 
-        &__box {
-            padding: 18px 35px;
-        }
+    }
 
-        &__box-input {
+    .delivery-box {
+        padding: 18px 35px;
+
+        &__input {
             width: 100%;
             margin-right: 0;
             margin-bottom: 12px;
@@ -498,36 +516,37 @@
             }
         }
 
-        &__box-footer {
+        &__footer {
             flex-direction: column;
         }
 
-        &__box-btn {
+        &__btn {
             font-size: 17px;
             margin-right: 0;
             margin-bottom: 15px;
         }
+    }
 
-        &__info {
-            padding: 15px 35px;
 
-            &-title {
-                font-size: 22px;
-            }
+    .delivery-info {
+        padding: 15px 35px;
 
-            &-wrap {
-                margin-right: 0;
-                width: 100%;
-            }
+        &__title {
+            font-size: 22px;
+        }
 
-            &-decoration {
-                left: 20px;
-                top: 150px;
-            }
+        &__wrap {
+            margin-right: 0;
+            width: 100%;
+        }
 
-            &-btn {
-                width: 100%;
-            }
+        &__decoration {
+            left: 20px;
+            top: 150px;
+        }
+
+        &__btn {
+            width: 100%;
         }
 
     }
@@ -570,13 +589,15 @@
         }
     }
 
-    .connect__box-body {
-        padding: 20px 11px;
-    }
+    .connect-box {
+        &__body {
+            padding: 20px 11px;
+        }
 
-    .connect__box-text {
-        font-size: 18px;
-        line-height: 22px;
+        &__text {
+            font-size: 18px;
+            line-height: 22px;
+        }
     }
 
     .connect__item {
@@ -608,11 +629,15 @@
             grid-auto-rows: 98px;
         }
 
-        &__card {
-            padding: 0 10px 10px;
-        }
 
-        &__card-title {
+
+
+    }
+
+    .cargo-card {
+        padding: 0 10px 10px;
+
+        &__title {
             font-size: 13px;
             line-height: 17px;
         }
@@ -666,9 +691,11 @@
     .footer {
         padding: 23px 0;
         font-size: 16px;
+
         &__inner {
             justify-content: stretch;
         }
+
         &__block {
             &_width {
                 flex-basis: 100%;

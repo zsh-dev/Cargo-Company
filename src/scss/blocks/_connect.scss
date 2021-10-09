@@ -12,32 +12,32 @@
     }
     
 }
-.connect__box{
-    &-wrapper {
+.connect-box{
+    &__wrapper {
         width: 590px;
         padding: 23px;
         background-color: #FFFFFF;
         box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
     }
-    &-body {
-        padding: 33px 125px 41px 44px;
+    &__body {
+        padding: 33px 105px 41px 44px;
         border: 3px solid #F50100;
         border-radius: 10px;
     }
-    &-title {
+    &__title {
         margin-bottom: 19px;
     }
-    &-text {
+    &__text {
         font-size: 20px;
         line-height: 24px;
         color: #313246;
         margin-bottom: 25px;
     }
-    &-form {
+    &__form {
         width: 375px;
     }
-    &-input {
+    &__input {
         width: 100%;
         height: 53px;
         padding: 0 26px;
@@ -49,7 +49,7 @@
             color: #929292;
         }
     }
-    &-btn {
+    &__btn {
         margin-top: 10px;
         width: 100%;
         height: 56px;
@@ -105,14 +105,19 @@
         width: 80px;
         height: 80px;
         border-radius: 50%;
-        background-color: #313246;
         box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
         margin-right: 35px;
-        img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        &_first {
+            background: #313246 url(../icons/connect-1.svg) center center no-repeat;
+        }
+        &_second {
+            background: #313246 url(../icons/connect-2.svg) center center no-repeat;
+        }
+        &_third {
+            background: #313246 url(../icons/connect-3.svg) center center no-repeat;
+        }
+        &_fourth {
+            background: #313246 url(../icons/connect-4.svg) center center no-repeat;
         }
     }
     &-text {
